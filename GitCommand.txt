@@ -1,0 +1,31 @@
+//for new computer need to add user & email
+    $ git config --global user.name "channdara"
+    $ git config --global user.email "channdara168@yahoo.com"
+
+//for new folder
+    $ git init
+    $ git remote add origin url
+    $ git add fileName
+    $ git commit -m "message"
+    $ git push origin master
+
+//fetch repo to new folder
+    $ git init
+    $ git remote add origin url
+    $ git fetch
+    $ git reset --maxed origin/master
+
+//change branch
+    $ git checkout branchName
+
+//merge file from branch to branch
+1. check file status (up-to-date or not)
+2. stand on branch you want to merge to (ex: master)
+3. use command merge
+    $ git merge branchName
+4. add, commit, push new files to branch master
+
+//remove code from repository
+    $ git rm -r --cached FolderName
+    $ git commit -m "Removed folder from repository"
+    $ git push origin master
